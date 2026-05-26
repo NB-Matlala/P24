@@ -265,6 +265,7 @@ if __name__ == "__main__":
 
     # ── Populate queue ────────────────────────────────────────────────────
     for url_template, property_type in url_to_property_type.items():
+        print(url_template.format(page=1))
         total       = get_url_total(url_template.format(page=1))
         total_pages = math.ceil(total / 20)
         print(f"{property_type}: {total} listings → {total_pages} pages")
