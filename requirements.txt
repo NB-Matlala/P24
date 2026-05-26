@@ -1,0 +1,8 @@
+requests-html
+requests
+pyquery
+beautifulsoup4
+random2
+threaded
+azure-storage-blob
+lxml[html_clean]
