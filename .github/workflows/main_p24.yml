@@ -1,0 +1,37 @@
+name: Web PrivPropCom
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '30 23 * * 6' # Runs at 00:30 CAT (UTC+2)
+
+
+jobs:
+  Commercial:
+    runs-on: ubuntu-latest
+    env:
+      BASE_URL: ${{ vars.BASE_URL }}
+      CON_STR: ${{ vars.CON_STR }}
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.11
+
+      - name: Install other dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install setuptools==57.5.0
+          
+      - name: Install dependencies from requirements.txt
+        run: |
+          python -m pip install -r requirements.txt
+          # If you want to avoid using the 2to3 tool, ensure that your dependencies are Python 3 compatible.
+
+      - name: Run web scraping
+        run: |
+          python P24Outside.py 
