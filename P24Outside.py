@@ -62,6 +62,7 @@ def get_url_total(url: str) -> int:
         try:
             res       = session.get(url, timeout=15)
             soup      = BeautifulSoup(res.content, 'html.parser')
+            print(soup)
             tot_div   = soup.find('div', class_='panel-body').text
             total_str = re.sub(r"[\s\xa0]", "", tot_div.split('of ')[1])
             web_total = int(total_str)
