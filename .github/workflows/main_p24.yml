@@ -1,4 +1,4 @@
-name: Web PrivPropCom
+name: P24 Outside
 
 on:
   workflow_dispatch:
