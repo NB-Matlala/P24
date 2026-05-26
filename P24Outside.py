@@ -72,7 +72,7 @@ def get_web_total():
 
     while retry < RETRY_LIMIT:
         try:
-            res       = session.get('{base_url}/for-sale/advanced-search/results?sp=pid%3d1%2c5%2c6%2c9%2c7%2c8%2c2%2c3%2c14%26so%3dNewest')
+            res       = session.get(f'{base_url}/for-sale/advanced-search/results?sp=pid%3d1%2c5%2c6%2c9%2c7%2c8%2c2%2c3%2c14%26so%3dNewest')
             soup      = BeautifulSoup(res.content, 'html.parser')
             tot_div   = soup.find('div', class_='panel-body').text
             total_str = re.sub(r"[\s\xa0]", "", tot_div.split('of ')[1])
