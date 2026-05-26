@@ -31,25 +31,16 @@ session.headers.update({
 })
 
 
-# url_to_property_type = {
-#     base_url+'/houses-for-sale/advanced-search/results/p{page}?sp=pid%3d1%2c5%2c6%2c9%2c7%2c8%2c2%2c3%2c14%26so%3dNewest':              'houses',
-#     base_url+'/apartments-for-sale/advanced-search/results/p{page}?sp=pid%3d1%2c5%2c6%2c9%2c7%2c8%2c2%2c3%2c14%26so%3dNewest':          'apartments',
-#     base_url+'/townhouses-for-sale/advanced-search/results/p{page}?sp=pid%3d1%2c5%2c6%2c9%2c7%2c8%2c2%2c3%2c14%26so%3dNewest':          'townhouses',
-#     base_url+'/vacant-land-for-sale/advanced-search/results/p{page}?sp=pid%3d1%2c5%2c6%2c9%2c7%2c8%2c2%2c3%2c14%26so%3dNewest':         'vacant land',
-#     base_url+'/farms-for-sale/advanced-search/results/p{page}?sp=pid%3d1%2c5%2c6%2c9%2c7%2c8%2c2%2c3%2c14%26so%3dNewest':               'farms',
-#     base_url+'/commercial-property-for-sale/advanced-search/results/p{page}?sp=pid%3d1%2c5%2c6%2c9%2c7%2c8%2c2%2c3%2c14%26so%3dNewest': 'commercial property',
-#     base_url+'/industrial-property-for-sale/advanced-search/results/p{page}?sp=pid%3d1%2c5%2c6%2c9%2c7%2c8%2c2%2c3%2c14%26so%3dNewest': 'industrial property',
-# }
-
 url_to_property_type = {
-    'https://www.property24.com/houses-for-sale/advanced-search/results/p{page}?sp=pid%3d1%2c5%2c6%2c9%2c7%2c8%2c2%2c3%2c14%26so%3dNewest':              'houses',
-    'https://www.property24.com/apartments-for-sale/advanced-search/results/p{page}?sp=pid%3d1%2c5%2c6%2c9%2c7%2c8%2c2%2c3%2c14%26so%3dNewest':          'apartments',
-    'https://www.property24.com/townhouses-for-sale/advanced-search/results/p{page}?sp=pid%3d1%2c5%2c6%2c9%2c7%2c8%2c2%2c3%2c14%26so%3dNewest':          'townhouses',
-    'https://www.property24.com/vacant-land-for-sale/advanced-search/results/p{page}?sp=pid%3d1%2c5%2c6%2c9%2c7%2c8%2c2%2c3%2c14%26so%3dNewest':         'vacant land',
-    'https://www.property24.com/farms-for-sale/advanced-search/results/p{page}?sp=pid%3d1%2c5%2c6%2c9%2c7%2c8%2c2%2c3%2c14%26so%3dNewest':               'farms',
-    'https://www.property24.com/commercial-property-for-sale/advanced-search/results/p{page}?sp=pid%3d1%2c5%2c6%2c9%2c7%2c8%2c2%2c3%2c14%26so%3dNewest': 'commercial property',
-    'https://www.property24.com/industrial-property-for-sale/advanced-search/results/p{page}?sp=pid%3d1%2c5%2c6%2c9%2c7%2c8%2c2%2c3%2c14%26so%3dNewest': 'industrial property',
+    base_url+'/houses-for-sale/advanced-search/results/p{page}?sp=pid%3d1%2c5%2c6%2c9%2c7%2c8%2c2%2c3%2c14%26so%3dNewest':              'houses',
+    base_url+'/apartments-for-sale/advanced-search/results/p{page}?sp=pid%3d1%2c5%2c6%2c9%2c7%2c8%2c2%2c3%2c14%26so%3dNewest':          'apartments',
+    base_url+'/townhouses-for-sale/advanced-search/results/p{page}?sp=pid%3d1%2c5%2c6%2c9%2c7%2c8%2c2%2c3%2c14%26so%3dNewest':          'townhouses',
+    base_url+'/vacant-land-for-sale/advanced-search/results/p{page}?sp=pid%3d1%2c5%2c6%2c9%2c7%2c8%2c2%2c3%2c14%26so%3dNewest':         'vacant land',
+    base_url+'/farms-for-sale/advanced-search/results/p{page}?sp=pid%3d1%2c5%2c6%2c9%2c7%2c8%2c2%2c3%2c14%26so%3dNewest':               'farms',
+    base_url+'/commercial-property-for-sale/advanced-search/results/p{page}?sp=pid%3d1%2c5%2c6%2c9%2c7%2c8%2c2%2c3%2c14%26so%3dNewest': 'commercial property',
+    base_url+'/industrial-property-for-sale/advanced-search/results/p{page}?sp=pid%3d1%2c5%2c6%2c9%2c7%2c8%2c2%2c3%2c14%26so%3dNewest': 'industrial property',
 }
+
 ################################################################################
 
 
